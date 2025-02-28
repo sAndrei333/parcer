@@ -1,5 +1,3 @@
-from sched import scheduler
-
 from aiogram import Bot, Dispatcher, Router
 from config.token import TOKEN
 import sqlite3
@@ -12,3 +10,5 @@ dp = Dispatcher()
 dp.include_router(router)
 bot= Bot(TOKEN)
 scheduler= AsyncIOScheduler(timezone = 'Europe/Moscow')
+
+
